@@ -2,7 +2,7 @@ package za.co.kholofelo.architecture.designpatterns.billpugh;
 
 /**
  * @author Kholofelo Maloma
- * @explained : Bill Plugh came up with this genius Singleton Creation Model. It is thread safe and does not create a bottleneck (does not use synchronised).
+ * @explained : Bill Pugh came up with this genius Singleton Creation Model. It is thread safe and does not create a bottleneck (does not use synchronised).
  * When BillPughSingleton is loaded in memory, BillPughSingletonHolder is not loaded. So the singleton is not created.
  * But when #getInstance() is called, BillPughSingletonHolder is loaded for the first time, creating the singleton.
  * <p>
