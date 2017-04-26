@@ -22,7 +22,7 @@ public class SingletonDestroyer {
         System.out.println("Yes, they are the same instance, just pointed to by two different handlers, firstSingleton and secondSingleton");
 
         System.out.println("Now let's see if we can break the rules...\nCreating an instance of BillPughSingleton which would be a second one in memory.");
-        BillPughSingleton thirdSingleton;
+        BillPughSingleton thirdSingleton = null;
         try {
             Constructor[] constructors = BillPughSingleton.class.getDeclaredConstructors();
 
