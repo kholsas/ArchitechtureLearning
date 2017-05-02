@@ -26,6 +26,7 @@ public class SerialisedBillPughSingleton implements Serializable {
      *
      * this makes sure not to create another instance but return the same instance! It will deny the second creation of this instance either using Reflection (throws exeption) or serialisation (just returns the same instance)
      */
+
     protected Object readResolve() {
         return getInstance();
     }
